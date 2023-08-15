@@ -9,7 +9,7 @@ struct Alumno {
 };
 
 
-int LeerNota(){
+int LeerNota(){                            /*funcion para leeer nota*/
   int nota;
   do{
     cin >> nota;
@@ -18,23 +18,24 @@ int LeerNota(){
 }
 
 int main(){
-  Alumno estudiantes[3];
-  for( int i=0; i<3; i++){
+  int n=3;                                /*cantidad de estudiantes*/
+  Alumno estudiantes[n];                  /*arreglo para registrar los estudiantes*/
+  for( int i=0; i<n; i++){
     cout << "nombre de estudiante " << i << endl; 
     cin >> estudiantes[i].nombre;
-    for( int j=0; j<3; j++){
+    for( int j=0; j < 3; j++){
       cout << "nota: " << j << endl;
       cin >> estudiantes[i].notas[j];
     }
   }
 
   
-  Alumno* ptr[3];
-  for(int i = 0 ; i < 3; i++){
+  Alumno* ptr[n];                         /*apuntador del arreglo*/
+  for(int i = 0 ; i < n; i++){
     ptr[i] = &estudiantes[i];
   }  
 
-  for(int i=0; i < 3; i++){
+  for(int i=0; i < n; i++){               /*imprime los datos de cada uno*/ 
     cout << endl;
     cout << "Datos del estudiante "<< i << endl;
     cout << "Nombre : " << ptr[i]->nombre << endl;
