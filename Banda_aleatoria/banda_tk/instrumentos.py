@@ -1,3 +1,4 @@
+from tkinter import PhotoImage
 class Instrumento:
     def __init__(self) -> None:
         pass
@@ -9,7 +10,10 @@ class Instrumento:
     def afinar_instrumento(self):
         pass 
 
+
 class Guitarra(Instrumento):
+    def __init__(self):
+        self.image = "guitar_image.png"
 
     def tocar_instrumento(self):
         return(" esta tocando la guitarra")
@@ -18,6 +22,8 @@ class Guitarra(Instrumento):
         return(" afinó las cuerdas de la guitarra")
 
 class Piano(Instrumento):
+    def __init__(self):
+        self.image = "piano_image.png"
 
     def tocar_instrumento(self):
         return(" esta tocando el piano")
@@ -27,6 +33,9 @@ class Piano(Instrumento):
 
 class Bateria(Instrumento):
 
+    def __init__(self):
+        self.image = "bateria_image.png"
+
     def tocar_instrumento(self):
         return(" esta tocando la bateria")
 
@@ -35,10 +44,24 @@ class Bateria(Instrumento):
 
 class Bajo(Instrumento):
 
+    def __init__(self):
+        self.image = "bajo_image.png"
+
+
     def tocar_instrumento(self):
         return(" esta tocando el bajo")
 
     def afinar_instrumento(self):
         return(" afinó las cuerdas de el bajo")
+    
+class Maracas(Instrumento):
 
-Instrumentos=[Guitarra(),Piano(),Bajo(),Bateria()]
+    def __init__(self):
+        self.image = "maracas_image.png"
+
+    def tocar_instrumento(self):
+        return(" esta tocando las maracas")
+
+    def afinar_instrumento(self):
+        return(" las maracas no se afinan") 
+
