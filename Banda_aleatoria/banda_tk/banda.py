@@ -11,7 +11,7 @@ class Banda:
 
     def agregar_musicos(self):
         for i in range(randint(1,4)):
-            self.musicos.append(Musico(i,choice(self.instrumentos)))
+            self.musicos.append(Musico(i+1,choice(self.instrumentos)))
     
 
     def afinar_instrumentos(self):
