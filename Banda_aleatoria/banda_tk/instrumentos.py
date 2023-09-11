@@ -1,4 +1,3 @@
-from tkinter import PhotoImage
 class Instrumento:
     def __init__(self) -> None:
         pass
