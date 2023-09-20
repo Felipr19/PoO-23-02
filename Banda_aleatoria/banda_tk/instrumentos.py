@@ -14,7 +14,7 @@ class Instrumento:
 class Guitarra(Instrumento):
     def __init__(self):
         self.nombre = "la guitarra"
-        self.image = "guitar_image.png"
+        self.image = "Images/guitar_image.png"
 
 
     def afinar_instrumento(self):
@@ -23,7 +23,7 @@ class Guitarra(Instrumento):
 class Piano(Instrumento):
     def __init__(self):
         self.nombre = "el piano"
-        self.image = "piano_image.png"
+        self.image = "Images/piano_image.png"
 
 
     def afinar_instrumento(self):
@@ -33,7 +33,7 @@ class Bateria(Instrumento):
 
     def __init__(self):
         self.nombre = "la bateria"
-        self.image = "bateria_image.png"
+        self.image = "Images/bateria_image.png"
 
 
     def afinar_instrumento(self):
@@ -43,7 +43,7 @@ class Bajo(Instrumento):
 
     def __init__(self):
         self.nombre = "el bajo"
-        self.image = "bajo_image.png"
+        self.image = "Images/bajo_image.png"
 
     def afinar_instrumento(self):
         return(" afinó las cuerdas de el bajo")
@@ -52,7 +52,7 @@ class Maracas(Instrumento):
 
     def __init__(self):
         self.nombre = "las maracas"
-        self.image = "maracas_image.png"
+        self.image = "Images/maracas_image.png"
 
 
     def afinar_instrumento(self):
